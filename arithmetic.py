@@ -54,7 +54,7 @@ def add_mult(num1, num2, num3):
     Given the syntax x+ num1 num2 num3
     """
 
-    return (num1 + num2) * num3
+    return multiply(add(num1, num2), num3)
 
 def add_cubes(num1, num2):
     """Adds together the cubes of num1 and num2.
@@ -62,4 +62,4 @@ def add_cubes(num1, num2):
     Given the syntax cubes+ num1 num2
     """
 
-    return (num1 ** 3) + (num2 ** 3)
+    return add(cube(num1), cube(num2))
